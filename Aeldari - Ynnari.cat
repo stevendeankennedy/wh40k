@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f0e-dd91-7676-722d" name="Aeldari - Ynnari" book="Index: Xenos 1" revision="18" battleScribeVersion="2.01" authorName="tag8833" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f0e-dd91-7676-722d" name="Aeldari - Ynnari" book="Index: Xenos 1" revision="22" battleScribeVersion="2.01" authorName="Peter Zaitcev / Simon Porter" authorContact="USSX-Hares / FarseerVeraenthis on Gitter" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -846,6 +846,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="c3cc-22d9-1014-b496" name="Faction: &lt;Haemonculus Coven&gt;" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries/>
   <selectionEntries/>
@@ -1651,7 +1658,7 @@
       <constraints/>
       <categoryLinks/>
     </entryLink>
-    <entryLink id="3d78-c3e1-34ca-d8aa" name="New EntryLink" hidden="false" targetId="829b-aac7-d866-01ca" type="selectionEntry">
+    <entryLink id="3d78-c3e1-34ca-d8aa" name="Razorwing Jetfighter" hidden="false" targetId="829b-aac7-d866-01ca" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1675,7 +1682,7 @@
       <constraints/>
       <categoryLinks/>
     </entryLink>
-    <entryLink id="1d17-8ba3-ae88-b38b" name="New EntryLink" hidden="false" targetId="a74d-d706-214e-86a0" type="selectionEntry">
+    <entryLink id="1d17-8ba3-ae88-b38b" name="Venom" hidden="false" targetId="a74d-d706-214e-86a0" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1900,6 +1907,22 @@
       <categoryLinks/>
     </entryLink>
     <entryLink id="07f4-4868-f3fb-0522" name="Corsair Cloud Dancer Band" hidden="false" targetId="015f-f7be-c4be-1aff" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="810b-7974-b371-df3f" name="Tantalus" hidden="false" targetId="4ae8-cc6c-6e03-8d6f" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="bd21-a09a-0f62-f392" name="Reaper" hidden="false" targetId="1779-784a-6de6-b1df" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3527,18 +3550,6 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="7+"/>
           </characteristics>
         </profile>
-        <profile id="b037-a9d7-8dcc-c413" name="Shadowseer - Psyker" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d" profileTypeName="Psyker">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Cast" characteristicTypeId="5afb-9914-904b-d3b3" value="This model can attempt to manifest two psychic powers in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the &quot;Smite&quot; power and one psychic power from the Phantasmancy discipline (pg.68)."/>
-            <characteristic name="Deny" characteristicTypeId="b5ac-9c20-5d5a-6f9b"/>
-            <characteristic name="Powers Known" characteristicTypeId="69d7-b45e-00a2-7e46"/>
-            <characteristic name="Other" characteristicTypeId="c2e2-f115-0003-5d7b"/>
-          </characteristics>
-        </profile>
         <profile id="40eb-d804-2b98-db00" name="Shield from Harm" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
@@ -3677,6 +3688,33 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="178c-80b9-0d05-ec7f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="568f-c0a2-3f61-b989" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="cf57-03fb-f9c6-8975" name="Phantasmancy" hidden="false" targetId="7961-453c-a38d-186c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5970-e568-a891-8dd8" name="Psyker (Shadowseer)" hidden="false" targetId="0e60-570d-988f-15b2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="9764-e950-b4d4-791b" name="Smite" hidden="false" targetId="03fd-db47-5333-1e1f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4997-abfd-901a-edd5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8d3-5373-8c46-06c2" type="max"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -6805,6 +6843,16 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="2+"/>
           </characteristics>
         </profile>
+        <profile id="94fd-07f1-d1b2-5ced" name="Maugan Ra - Keywords" hidden="false" profileTypeId="b900-0afb-e411-2cbb" profileTypeName="Keywords">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Keywords (Faction)" characteristicTypeId="6b92-2d97-5144-62bc" value="Aeldari, Asuryani, Aspect Warrior"/>
+            <characteristic name="Keywords (Basic)" characteristicTypeId="ce6c-4765-4bb8-bd49" value="Character, Infantry, Phoenix Lord, Maugan Ra"/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules/>
       <infoLinks>
@@ -7032,6 +7080,20 @@
                 <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
                 <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
                 <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+              </characteristics>
+            </profile>
+            <profile id="cbb6-cf45-8192-6715" name="The Maugetar (shooting)" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="When attacking with this weapon, choose one of the profiles below. Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -3 instead of -1."/>
               </characteristics>
             </profile>
           </profiles>
@@ -23081,15 +23143,7 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="9">
-          <repeats>
-            <repeat field="selections" scope="ae08-dbdb-00a4-91c3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80b6-f1bf-9865-653e" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="8b8a-00c4-7860-46a3" name="New CategoryLink" hidden="false" targetId="c651-cc0a-9e8e-5eb4" primary="false">
@@ -23392,7 +23446,7 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="85.0"/>
-            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="9.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -34022,6 +34076,619 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1779-784a-6de6-b1df" name="Reaper" book="Imerpial Armour - Index: Xenos" page="37" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="4978-0cd2-f6ac-132e" name="Reaper" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="*"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="4+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="*"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="6"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="6"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="12"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="*"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="4+"/>
+          </characteristics>
+        </profile>
+        <profile id="67f3-a1eb-ce41-3172" name="Reaper" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="M"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="BS"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="A"/>
+          </characteristics>
+        </profile>
+        <profile id="5de3-cf39-c449-4be8" name="Reaper 1" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="8-12+"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="14&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="3+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="5"/>
+          </characteristics>
+        </profile>
+        <profile id="0623-d0b5-81df-ddca" name="Reaper 2" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="4-7"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="10&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="4+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="3"/>
+          </characteristics>
+        </profile>
+        <profile id="897f-f02d-546f-ce3c" name="Reaper 3" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="1-3"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="6&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="5+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="D3"/>
+          </characteristics>
+        </profile>
+        <profile id="7abd-5f1c-7bc7-c184" name="Explodes" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 5+ it explodes, and each unit within 6&quot; suffers D3 mortal wounds."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3072-5874-c7a6-df7b" name="Hovering" hidden="false" targetId="568c-92d6-4089-ad34" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="d3c2-ae57-b5d4-e763" name="New CategoryLink" hidden="false" targetId="c3cc-22d9-1014-b496" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0a47-7ee4-6140-8d04" name="New CategoryLink" hidden="false" targetId="53ad-d29f-5f37-2a82" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="13b1-f7a2-8a94-d284" name="New CategoryLink" hidden="false" targetId="99c9-6127-f78b-1f66" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="122a-9f37-5c3d-94f5" name="New CategoryLink" hidden="false" targetId="bd42-0139-0789-e05b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7ac8-e47c-d655-bec0" name="New CategoryLink" hidden="false" targetId="c8fd-783f-3230-493e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b57d-cd2f-9735-4a9d" name="New CategoryLink" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8399-d3db-c53e-c325" name="New CategoryLink" hidden="false" targetId="8447-1ad0-d85e-4d5a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2fc7-b299-b3e1-caa7" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e8cd-afaa-bb3a-0f01" name="New CategoryLink" hidden="false" targetId="0532-dbd6-bf12-340b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="aaa4-b415-53ab-a78f" name="Storm Vortex Projector" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="d57e-8b80-d8bb-b5e5" name="Storm Vortex Projector - Blast" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2D6"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If any models are slain in the target unit, it may not Advance in the following turn."/>
+              </characteristics>
+            </profile>
+            <profile id="f584-9899-a468-07ae" name="Storm Vortex Projector - Beam" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D6"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If any models are slain in the target unit, it may not Advance in the following turn."/>
+              </characteristics>
+            </profile>
+            <profile id="36a8-20b1-22e2-a4d6" name="Storm Vortex Projector" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When attacking with this weapon, choose one of the profiles&quot; - Blast - Beam"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9af-36c4-339c-1cd4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f18-466a-68aa-1c52" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="885b-554d-0f31-207d" name="Scythevanes" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="8565-974d-7ed3-1bf1" name="Scythevanes" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value=""/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eca2-4911-a8c4-5f60" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb7f-754a-a67c-8dbe" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="936e-40eb-0cb5-098a" name="Sharpened prow blade" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="e70c-2c4d-cee9-9ad8" name="Sharpened prow blade" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can make a maximum of one combat attack with a sharpened prow blade each turn (any remaining attacks must be made with a different weapon)."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c06-d8a2-633a-0c5b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22fb-ecde-c3bb-eceb" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="1f34-a935-a179-4b74" name="Night Shield" hidden="false" targetId="1dbb-d87f-7183-6748" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="9.0"/>
+        <cost name="pts" costTypeId="points" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4ae8-cc6c-6e03-8d6f" name="Tantalus" book="Imerpial Armour - Index: Xenos" page="37" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="bd96-91ca-ec0c-47c1" name="Tantalus" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="*"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="4+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="*"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="7"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="7"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="18"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="*"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
+          </characteristics>
+        </profile>
+        <profile id="ee4a-9673-968d-34c8" name="Tantalus" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="M"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="BS"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="A"/>
+          </characteristics>
+        </profile>
+        <profile id="514a-f3a4-8985-2133" name="Tantalus 1" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="9-18+"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="16&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="3+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="6"/>
+          </characteristics>
+        </profile>
+        <profile id="88d1-d5b6-654a-c47b" name="Tantalus 2" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="4-8"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="14&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="4+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="4"/>
+          </characteristics>
+        </profile>
+        <profile id="9339-0394-8457-0872" name="Tantalus 3" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="1-3"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="12&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="4+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="D3"/>
+          </characteristics>
+        </profile>
+        <profile id="5e64-3637-9cb3-a332" name="Explodes" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6+ it explodes, and each unit within 9&quot; suffers D6 mortal wounds."/>
+          </characteristics>
+        </profile>
+        <profile id="1792-051d-985a-e3a6" name="Enhanced Aethersails" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model Advances, it may double its current Movement characteristic - do not roll a dice to determine distance. "/>
+          </characteristics>
+        </profile>
+        <profile id="c644-ed18-37f4-d8da" name="Scything charge" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model finishes a charge move within 1&quot; of one or more enemy units, roll a D6 for each of these enemy units. Ona 4+, that unit suffers D3 mortal wounds.  "/>
+          </characteristics>
+        </profile>
+        <profile id="d5bf-d49e-d225-d4ac" name="Chariot of Tortured Souls" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If you Warlord is embarked on the Tantalus, all friendly units within line of sight of the Tantalus use the Warlord&apos;s Leadership characteristic instead of their own. This ability does not apply to units that are entirely on or within cover, even if they can draw line of sight to the Tantalus. "/>
+          </characteristics>
+        </profile>
+        <profile id="caa8-228b-507b-f32e" name="Tantalus" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 16 INCUBI or DRUKHARI INFANTRY models. Each Grotesque takes the space of two models. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="5c83-dc3b-d769-cdac" name="Hovering" hidden="false" targetId="568c-92d6-4089-ad34" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d45a-8c25-516c-dacf" name="Open-topped" hidden="false" targetId="ce5f-4d5d-cb8b-0559" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="21befb24-fc85-4f52-a745-64b2e48f8228" value="Note that the passengers cannot shoot if this model Falls Back, even though the Tantalus itself can. ">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="8187-061e-3259-6020" name="New CategoryLink" hidden="false" targetId="53ad-d29f-5f37-2a82" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0f4c-11bb-6224-5944" name="New CategoryLink" hidden="false" targetId="99c9-6127-f78b-1f66" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a3a5-2018-239f-38f4" name="New CategoryLink" hidden="false" targetId="bd42-0139-0789-e05b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="fd09-e982-1186-fd57" name="New CategoryLink" hidden="false" targetId="db6a-df50-9c8f-2c52" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="742c-0cea-1ac1-38be" name="New CategoryLink" hidden="false" targetId="6cc4-1b62-8e8a-05cd" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3ac1-8390-bf95-dfcc" name="New CategoryLink" hidden="false" targetId="c8fd-783f-3230-493e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d74c-0341-3889-2f86" name="New CategoryLink" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="202c-6709-8a78-6e17" name="New CategoryLink" hidden="false" targetId="0532-dbd6-bf12-340b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="63db-0d3d-e139-d70a" name="New CategoryLink" hidden="false" targetId="c3cc-22d9-1014-b496" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="dfd3-0683-5920-eab6" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="151a-edd0-1080-8253" name="Pulse disintegrator" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="43e0-8e36-be59-d6dc" name="Pulse disintegrator" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 6"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value=""/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="443c-b58f-7446-2fb4" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c877-f480-10f9-912b" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b41d-2f6d-18eb-f5ce" name="Dire scythe blade" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="bc7e-4024-89a1-5dee" name="Dire scythe blade" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e705-3c3f-76c0-6b44" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83d2-ee89-c6b5-5411" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="02a3-21ed-3bbb-7090" name="Night Shield" hidden="false" targetId="1dbb-d87f-7183-6748" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="18.0"/>
+        <cost name="pts" costTypeId="points" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e60-570d-988f-15b2" name="Psyker (Shadowseer)" book="Index: Xenos 1" page="71" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="2134-7bbf-f26d-0b2d" name="Shadowseer - Psyker" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d" profileTypeName="Psyker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Cast" characteristicTypeId="5afb-9914-904b-d3b3" value="2"/>
+            <characteristic name="Deny" characteristicTypeId="b5ac-9c20-5d5a-6f9b" value="1"/>
+            <characteristic name="Powers Known" characteristicTypeId="69d7-b45e-00a2-7e46" value="1 - Phantasmancy"/>
+            <characteristic name="Other" characteristicTypeId="c2e2-f115-0003-5d7b" value=""/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a3-dbdd-dfb1-8319" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f0-ce17-6e04-7525" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7f93-a621-fdeb-0426" name="Revenant Discipline" hidden="false" collective="false">
@@ -34942,6 +35609,102 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7961-453c-a38d-186c" name="Phantasmancy" book="Index: Xenos 1" page="68" hidden="false" collective="false" defaultSelectionEntryId="2586-3025-252e-f76d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4b5-8a83-0e83-6d90" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cac-894c-351e-6023" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="2586-3025-252e-f76d" name="1. Twilight Pathways" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="e960-505f-6ab6-196b" name="Twilight Pathways" book="Index: Xenos 1" page="68" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="6"/>
+                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="3&quot;"/>
+                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Select a visible friendly HARLEQUINS unit within 3&quot; of the psyker. That unit can immediately move as if it were its Movement phase. You cannot use Twilight Pathways on a unit more than once in each Psychic phase"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14b0-e92d-5160-72ff" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="05cf-be37-16e7-b7f1" name="2. Fog of Dreams" book="Index: Xenos 1" page="68" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="f2a4-3070-8ec8-5e0d" name="Fog of Dreams" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="7"/>
+                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Select a visible enemy unit within 18&quot; of the psyker. Until the start of your next Psychic phase, your opponent must subtract 1 from all hit rolls for that unit that target HARLEQUIN INFANTRY units."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f760-3cec-3abb-2589" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="8792-20c9-914a-5d4b" name="3. Mirror of Minds" book="Index: Xenos 1" page="68" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="3cb7-9fb0-ebbd-2399" name="Mirror of Minds" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="8"/>
+                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Select an enemy unit within 24&quot; of the psyker. Then, both players roll a dice. If the Harlequin player&apos;s roll is equal or higher than their opponent&apos;s, then the target suffers 1 mortal wound. Repeat this process until the target is destroyed, or the enemy player rolls a result that is higher than the Harlequin player&apos;s roll."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a265-e107-bb3e-ec83" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

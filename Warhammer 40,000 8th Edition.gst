@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 8th Edition" revision="19" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 8th Edition" revision="27" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -68,6 +68,12 @@
       <characteristicTypes>
         <characteristicType id="ada9-1c1d-fa2a-3803" name="Remaining W"/>
         <characteristicType id="b7a6-b64d-4339-eb87" name="BS"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="b900-0afb-e411-2cbb" name="Keywords">
+      <characteristicTypes>
+        <characteristicType id="6b92-2d97-5144-62bc" name="Keywords (Faction)"/>
+        <characteristicType id="ce6c-4765-4bb8-bd49" name="Keywords (Basic)"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -1376,7 +1382,7 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="41c1-510e-2e3b-76fc" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a9-7171-c907-0e15" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e6a9-7171-c907-0e15" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b448-138d-b4aa-5025" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
@@ -3826,7 +3832,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="pts" costTypeId="points" value="12.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -3924,6 +3930,12 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="e750-f8e4-4667-b083" name="Combi Weapon" hidden="false" targetId="a269-b8d9-67c5-4009" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints/>
@@ -3958,6 +3970,12 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="0078-b3a9-c2e8-c96f" name="Combi Weapon" hidden="false" targetId="a269-b8d9-67c5-4009" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints/>
@@ -3981,6 +3999,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="bac3-c746-cec0-e45d" name="Meltagun" hidden="false" targetId="ec4c-1132-ddaf-db8e" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="89f9-614c-9804-9dda" name="Combi Weapon" hidden="false" targetId="a269-b8d9-67c5-4009" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4090,7 +4114,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="9.0"/>
+        <cost name="pts" costTypeId="points" value="8.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4579,6 +4603,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="2143-e026-6475-051d" name="Grav-gun" hidden="false" targetId="a3d2-b0d7-70bc-695e" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3769-90bc-d2ca-500a" name="Combi Weapon" hidden="false" targetId="a269-b8d9-67c5-4009" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5996,7 +6026,7 @@
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="points" value="25">
+        <modifier type="set" field="points" value="21">
           <repeats/>
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef18-746a-369f-43a4" type="instanceOf"/>
@@ -6010,7 +6040,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="pts" costTypeId="points" value="16.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6128,7 +6158,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="13.0"/>
+        <cost name="pts" costTypeId="points" value="12.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6548,7 +6578,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll hit rolls of 1 made for friendly Fallen units within 6&quot; of Cypher"/>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll hit rolls of 1 made for friendly FALLEN units within 6&quot; of Cypher"/>
           </characteristics>
         </profile>
         <profile id="86fe-c023-4f7d-0825" name="No-one&apos;s Puppet" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
@@ -7150,7 +7180,13 @@
                           <profiles/>
                           <rules/>
                           <infoLinks/>
-                          <modifiers/>
+                          <modifiers>
+                            <modifier type="set" field="points" value="12">
+                              <repeats/>
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
                           <constraints/>
                           <categoryLinks/>
                         </entryLink>
@@ -7681,7 +7717,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="9.0"/>
+        <cost name="pts" costTypeId="points" value="8.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7703,7 +7739,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="13.0"/>
+        <cost name="pts" costTypeId="points" value="12.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7719,7 +7755,7 @@
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="points" value="25">
+        <modifier type="set" field="points" value="21">
           <repeats/>
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef18-746a-369f-43a4" type="instanceOf"/>
@@ -7733,7 +7769,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="pts" costTypeId="points" value="16.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8577,7 +8613,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="pts" costTypeId="points" value="12.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8777,7 +8813,13 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="points" value="12">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e883-e5b9-8fac-a668" type="max"/>
           </constraints>
@@ -8888,8 +8930,17 @@
       <description>If your Warlord is a CHARACTER, it can use a Warlord Trait. Immediately before either player starts to deploy their army, you can roll a D3 on the Warlord Trait table here to determine what Warlord Trait your Warlord has. Alternatively, choose the trait that most suits your Warlord&apos;s temperament or style of war.
 
 1) Legendary Fighter: If this Warlord charges in the Charge phase, add 1 to their Attacks characteristic until the end of the ensuing Fight phase.
+
 2) Inspiring Leader: Friendly units within 6&quot; of this Warlord can add 1 to their Leadership characteristic.
+
 3) Tenacious Survivor: Roll a dice each time this Warlord loses a wound.  On a 6, the Warlord shrugs off the damage and does not lose the wound.</description>
+    </rule>
+    <rule id="a269-b8d9-67c5-4009" name="Combi Weapon" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When attacking with this weapon, choose one or both of the profiles. If you choose both, subtract 1 from all hit rolls for this weapon.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9436,7 +9487,7 @@
         <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed wound rolls for this weapon if the target is a &lt;b&gt;VEHICLE&lt;/b&gt;."/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed wound rolls for this weapon if the target is a VEHICLE."/>
       </characteristics>
     </profile>
     <profile id="ff12-161a-ca85-339f" name="Plasma pistol, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -11256,6 +11307,33 @@
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="589d-78cf-845c-2b65" name="Legendary Fighter" book="Warhammer 40,000" page="186" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this Warlord charges in the Charge phase, add 1 to their Attacks characteristic until the end of the ensuing Fight phase."/>
+      </characteristics>
+    </profile>
+    <profile id="add7-15e6-fb9e-25e4" name="Inspiring Leader" book="Warhammer 40,000" page="186" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Friendly units within 6&quot; of this Warlord can add 1 to their Leadership characteristic."/>
+      </characteristics>
+    </profile>
+    <profile id="7a19-046d-bf4e-bae3" name="Tenacious Survivor" book="Warhammer 40,000" page="186" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a dice each time this Warlord loses a wound. On a 6, the Warlord shrugs off the damage and does not lose the wound."/>
       </characteristics>
     </profile>
   </sharedProfiles>
