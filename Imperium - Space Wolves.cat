@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="24b6-2b46-0063-2867" name="Imperium - Space Wolves" book="Index: Imperium 1" revision="15" battleScribeVersion="2.01" authorName="Penguin20000, SKNinja" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="24b6-2b46-0063-2867" name="Imperium - Space Wolves" book="Index: Imperium 1" revision="14" battleScribeVersion="2.01" authorName="Penguin20000" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -9186,7 +9186,7 @@
                   <selectionEntryGroups/>
                   <entryLinks/>
                   <costs>
-                    <cost name="pts" costTypeId="points" value="16.0"/>
+                    <cost name="pts" costTypeId="points" value="20.0"/>
                     <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -16944,7 +16944,6 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="25.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6323-cada-dd9e-f0da" name="Inceptor Sergeant" hidden="false" collective="false" type="model">
@@ -16980,7 +16979,6 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="25.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -22286,7 +22284,6 @@
       <entryLinks/>
       <costs>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="83db-e968-8c89-93b3" name="Assault Bolter" hidden="false" collective="false" type="upgrade">
@@ -22306,10 +22303,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -22786,7 +22780,7 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="8567-3778-05ca-5daa" name="Wolf Guard Pack Leader in Terminator Armour" hidden="false" targetId="9c81-eeea-b40e-1c35" type="selectionEntry">
+        <entryLink id="8567-3778-05ca-5daa" name="New EntryLink" hidden="false" targetId="9c81-eeea-b40e-1c35" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
