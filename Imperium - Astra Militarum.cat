@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Astra Militarum" revision="82" battleScribeVersion="2.01" authorName="Alphalas, Joe Beddoe" authorContact="Gitter: @Alphalas, @CrusherJoe twitter: @kingoverlord, @theawesomesauce" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Astra Militarum" revision="90" battleScribeVersion="2.01" authorName="Alphalas, Joe Beddoe" authorContact="Gitter: @Alphalas, @CrusherJoe twitter: @kingoverlord, @theawesomesauce" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2354,6 +2354,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="49a8-96b5-de87-9b09" name="New CategoryLink" hidden="false" targetId="8d2c-36a7-e1b9-a6e9" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="87bd-8275-0e7c-a530" name="New CategoryLink" hidden="false" targetId="dd6e-7055-ca6b-b711" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8202,6 +8209,41 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="ef81-3bca-f771-a5fe" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c1e-d072-7ef2-75c8" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="3ea8-65c5-f73a-d251" name="Warlord Traits" hidden="false" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="e9c1-18c2-0bde-1886" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e9c1-18c2-0bde-1886" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
@@ -8384,7 +8426,7 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="b238-74f6-2685-82a8" name="New EntryLink" hidden="false" targetId="0334-f487-8229-0c1a" type="selectionEntry">
+        <entryLink id="b238-74f6-2685-82a8" name="Bolt pistol" hidden="false" targetId="0334-f487-8229-0c1a" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8398,6 +8440,41 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="739e-e78e-d844-71f1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0cb-400b-9fcc-337c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="71f0-5b07-f016-2fc5" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e11-28ab-af84-283f" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2eda-fdd2-f7af-51e1" name="Master of Command" hidden="false" targetId="c88e-8828-206c-8e39" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="9b55-96ce-c4ce-ef3d" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b55-96ce-c4ce-ef3d" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -9664,6 +9741,41 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="6970-ecd5-a140-886a" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e5f6-97ff-fb4c-5390" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="43d2-8511-f0a8-6b93" name="Superior Tactical Training" hidden="false" targetId="62da-ed0a-445a-9773" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="369b-c784-afa9-e250" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="369b-c784-afa9-e250" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="70.0"/>
@@ -9832,6 +9944,41 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6774-7417-fb25-420a" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e075-3cd6-2d3e-8af6" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="8137-0c83-4f6d-84e9" name="Warlord Traits" hidden="false" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="d11c-6882-66bd-839e" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d11c-6882-66bd-839e" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -10204,7 +10351,7 @@
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="6fbb-77fa-5f9d-7631" name="Frag Grenades" hidden="false" targetId="f68e-9984-71fe-6bca" type="selectionEntry">
+        <entryLink id="6fbb-77fa-5f9d-7631" name="Frag grenade" hidden="false" targetId="f68e-9984-71fe-6bca" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10223,6 +10370,41 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb87-bbb1-9214-3ad6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbfb-4f83-ffed-5fb6" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1ac9-9ca6-ca01-182a" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3424-742f-ce54-8e43" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="0364-5deb-8155-7df1" name="Lead From the Front" hidden="false" targetId="22a0-f598-a343-61af" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="6a0f-af00-9e70-8f70" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a0f-af00-9e70-8f70" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -10475,7 +10657,7 @@
                   </constraints>
                   <categoryLinks/>
                 </entryLink>
-                <entryLink id="2202-a5a1-1ed2-41c3" name="New EntryLink" hidden="false" targetId="7622-e68e-c5e5-c8e7" type="selectionEntryGroup">
+                <entryLink id="2202-a5a1-1ed2-41c3" name="Astra Militarum Melee Weapons" hidden="false" targetId="7622-e68e-c5e5-c8e7" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -11460,7 +11642,7 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="points" value="10">
+                <modifier type="set" field="points" value="8">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -11613,6 +11795,41 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="69b7-71e1-2fae-4820" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d1a-1aa3-b5ce-00da" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="7559-24f8-47bd-f27a" name="Warlord Traits" hidden="false" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="ed11-4214-2988-9a13" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed11-4214-2988-9a13" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
@@ -11689,6 +11906,32 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="1f6d-58f3-9ebe-ef93" name="Warlord Traits (BRB)" hidden="false" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="83cb-0324-349c-c3e6" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="66e1-c887-9699-226c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
@@ -11760,12 +12003,47 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="056a-d147-d741-a830" name="HEIRLOOMS OF CONQUEST" hidden="false" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup">
+        <entryLink id="056a-d147-d741-a830" name="Heirlooms of Conquest" hidden="false" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="372a-3230-f763-ed2c" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd13-4390-d59f-3e12" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="8b98-8f46-a1cb-7ea0" name="Warlord Traits (BRB)" hidden="false" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="63cc-fd26-feaa-175c" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63cc-fd26-feaa-175c" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -11842,7 +12120,7 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="points" value="10">
+                <modifier type="set" field="points" value="8">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -11956,6 +12234,16 @@
               </constraints>
               <categoryLinks/>
             </entryLink>
+            <entryLink id="17b0-d4c5-3a13-9fd6" name="Shotgun" hidden="false" targetId="2094-c9a6-a426-0970" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d66-1e9a-99d1-54df" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -11985,6 +12273,41 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="b3e1-8892-5000-dd59" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8986-dd41-706d-7e56" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="3e47-60ec-3984-07e5" name="Warlord Traits" hidden="false" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef81-3bca-f771-a5fe" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="4412-fedd-0274-8117" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4412-fedd-0274-8117" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -12163,6 +12486,41 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="a914-2557-bdc5-2a8b" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d3db-a3e9-a061-1056" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="eb5c-76df-617a-c27b" name="Lead From the Front" hidden="false" targetId="22a0-f598-a343-61af" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="3e76-cfbb-40c4-db29" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e76-cfbb-40c4-db29" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="75.0"/>
@@ -12269,6 +12627,41 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0de-395c-1c94-9a5c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e37-4293-6256-d677" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="e1e2-a2fa-735d-d19e" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea72-3660-567d-015c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1c5a-f44f-2f70-b9d3" name="Superior Tactical Training" hidden="false" targetId="62da-ed0a-445a-9773" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="b22a-3765-9e14-fb22" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b22a-3765-9e14-fb22" type="min"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -13616,6 +14009,41 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="144e-6efe-9f92-ad71" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc28-9a9c-e246-b191" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="f4a8-a34d-d80b-377a" name="Warlord Traits" hidden="false" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef81-3bca-f771-a5fe" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="833e-1a2d-bf61-f6f1" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="833e-1a2d-bf61-f6f1" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
@@ -14034,7 +14462,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="15">
+            <modifier type="set" field="points" value="12">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -14243,6 +14671,41 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c9f8-5189-343e-a73c" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c218-f41e-58b7-a50d" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="f607-c042-f7f5-57a2" name="Warlord Traits" hidden="false" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef81-3bca-f771-a5fe" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="81ef-ae29-833a-637c" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81ef-ae29-833a-637c" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -15325,7 +15788,7 @@
                       <rules/>
                       <infoLinks/>
                       <modifiers>
-                        <modifier type="set" field="points" value="12">
+                        <modifier type="set" field="points" value="17">
                           <repeats/>
                           <conditions/>
                           <conditionGroups/>
@@ -15632,7 +16095,7 @@
                       <rules/>
                       <infoLinks/>
                       <modifiers>
-                        <modifier type="set" field="points" value="12">
+                        <modifier type="set" field="points" value="17">
                           <repeats/>
                           <conditions/>
                           <conditionGroups/>
@@ -17034,6 +17497,41 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5127-7da2-5e08-59b8" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="191e-188d-39a8-9d21" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="bba1-a6d6-1a5d-77fb" name="Superior Tactical Training" hidden="false" targetId="62da-ed0a-445a-9773" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="1007-d3f8-6b94-d5d9" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1007-d3f8-6b94-d5d9" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -21231,7 +21729,7 @@
     </selectionEntry>
     <selectionEntry id="a764-82f0-2cd1-0465" name="Stat Damage (Leman Russ Commander)" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="5c3f-8ec3-6810-baae" name="Leman Russ 1" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="5c3f-8ec3-6810-baae" name="TC Russ 1" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -21243,7 +21741,7 @@
             <characteristic name="Attacks" characteristicTypeId="2e64-2e5c-f4d1-52d3" value="3"/>
           </characteristics>
         </profile>
-        <profile id="c3d7-67fb-900d-2337" name="Leman Russ 2" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="c3d7-67fb-900d-2337" name="TC Russ 2" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -21255,7 +21753,7 @@
             <characteristic name="Attacks" characteristicTypeId="2e64-2e5c-f4d1-52d3" value="D3"/>
           </characteristics>
         </profile>
-        <profile id="dabc-1473-eb28-3238" name="Leman Russ 3" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="dabc-1473-eb28-3238" name="TC Russ 3" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -21286,7 +21784,7 @@
     </selectionEntry>
     <selectionEntry id="d050-c6d8-d6de-9b61" name="Stat Damage (Pask)" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="ea0e-a3e3-6579-3ba6" name="Leman Russ 1" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="ea0e-a3e3-6579-3ba6" name="Pask Russ 1" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -21298,7 +21796,7 @@
             <characteristic name="Attacks" characteristicTypeId="2e64-2e5c-f4d1-52d3" value="3"/>
           </characteristics>
         </profile>
-        <profile id="c334-9e51-804e-d267" name="Leman Russ 2" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="c334-9e51-804e-d267" name="Pask Russ 2" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -21310,7 +21808,7 @@
             <characteristic name="Attacks" characteristicTypeId="2e64-2e5c-f4d1-52d3" value="D3"/>
           </characteristics>
         </profile>
-        <profile id="1338-0991-5bef-c1e1" name="Leman Russ 3" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="1338-0991-5bef-c1e1" name="Pask Russ 3" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -21844,7 +22342,7 @@
                   <rules/>
                   <infoLinks/>
                   <modifiers>
-                    <modifier type="set" field="points" value="10">
+                    <modifier type="set" field="points" value="8">
                       <repeats/>
                       <conditions/>
                       <conditionGroups/>
@@ -22445,7 +22943,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="259e-17d2-3f79-528b" name="Raiper Laser Destroyer" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="259e-17d2-3f79-528b" name="Rapier Laser Destroyer" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -22472,9 +22970,9 @@
       <constraints/>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="2055-4cee-3521-08ce" name="Raiper" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2055-4cee-3521-08ce" name="Rapier" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="77f1-9c47-4d93-040a" name="Raiper" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+            <profile id="77f1-9c47-4d93-040a" name="Rapier" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -28447,7 +28945,7 @@
     </selectionEntry>
     <selectionEntry id="2977-7fd0-f8c3-f1c6" name="Stat Damage (FW Leman Russ)" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="7bb7-39a6-faca-7e28" name="Leman Russ 1" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="7bb7-39a6-faca-7e28" name="FW Russ 1" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28459,7 +28957,7 @@
             <characteristic name="Attacks" characteristicTypeId="2e64-2e5c-f4d1-52d3" value="3"/>
           </characteristics>
         </profile>
-        <profile id="24fb-3d71-d4a5-7390" name="Leman Russ 2" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="24fb-3d71-d4a5-7390" name="FW Russ 2" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28471,7 +28969,7 @@
             <characteristic name="Attacks" characteristicTypeId="2e64-2e5c-f4d1-52d3" value="D3"/>
           </characteristics>
         </profile>
-        <profile id="9743-bf7c-e5e7-1250" name="Leman Russ 3" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
+        <profile id="9743-bf7c-e5e7-1250" name="FW Russ 3" hidden="false" profileTypeId="e6d5-85c5-7b01-a3c4" profileTypeName="Stat Damage - M/BS/A">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -30259,8 +30757,8 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Remaining W" characteristicTypeId="47db-2605-e5c3-9014" value="10-20+"/>
-            <characteristic name="M" characteristicTypeId="1328-dc56-5d71-dabb"/>
+            <characteristic name="Remaining W" characteristicTypeId="47db-2605-e5c3-9014" value="11-20+"/>
+            <characteristic name="M" characteristicTypeId="1328-dc56-5d71-dabb" value="20&quot;-45&quot;"/>
             <characteristic name="BS" characteristicTypeId="923d-2d0f-feb3-fead" value="4+"/>
           </characteristics>
         </profile>
@@ -30270,8 +30768,8 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Remaining W" characteristicTypeId="47db-2605-e5c3-9014" value="5-9"/>
-            <characteristic name="M" characteristicTypeId="1328-dc56-5d71-dabb"/>
+            <characteristic name="Remaining W" characteristicTypeId="47db-2605-e5c3-9014" value="5-10"/>
+            <characteristic name="M" characteristicTypeId="1328-dc56-5d71-dabb" value="20&quot;-30&quot;"/>
             <characteristic name="BS" characteristicTypeId="923d-2d0f-feb3-fead" value="5+"/>
           </characteristics>
         </profile>
@@ -30282,7 +30780,7 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Remaining W" characteristicTypeId="47db-2605-e5c3-9014" value="1-4"/>
-            <characteristic name="M" characteristicTypeId="1328-dc56-5d71-dabb"/>
+            <characteristic name="M" characteristicTypeId="1328-dc56-5d71-dabb" value="20&quot;"/>
             <characteristic name="BS" characteristicTypeId="923d-2d0f-feb3-fead" value="6+"/>
           </characteristics>
         </profile>
@@ -30560,6 +31058,7 @@
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa6f-0e22-a116-c31a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43cf-472c-c69d-0363" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -30608,15 +31107,15 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779"/>
-            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f"/>
-            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939"/>
-            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39"/>
-            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978"/>
-            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f"/>
-            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705"/>
-            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3"/>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="6&quot;"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="5+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="6+"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="3"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="1"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="6"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
           </characteristics>
         </profile>
       </profiles>
@@ -30671,12 +31170,47 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="900b-eaf3-be7f-d4cc" name="HEIRLOOMS OF CONQUEST" hidden="false" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup">
+        <entryLink id="900b-eaf3-be7f-d4cc" name="Heirlooms of Conquest" hidden="false" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="e9df-43d2-1bd9-0ef3" name="Warlord Traits (BRB)" hidden="false" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="7ea1-4eb9-1b19-bdec" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ea1-4eb9-1b19-bdec" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="db57-5bf4-857d-dd99" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de71-fcde-b972-107f" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -30840,6 +31374,32 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="65fb-6d22-868b-2019" name="Warlord Traits (BRB)" hidden="false" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="7665-5e94-692a-e041" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c863-88a3-fd96-04ac" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -31042,7 +31602,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can add to the Attacks characteristic of all models in the ADEPTUS MINISORUM INFANTRY and ASTRA MILITARUM INFANTRY units that within 6&quot; of any friendly MINISTORUM PRIESTS."/>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can add 1 to the Attacks characteristic of all models in an ADEPTUS MINISTORUM INFANTRY and ASTRA MILITARUM INFANTRY units that within 6&quot; of any friendly MINISTORUM PRIESTS."/>
           </characteristics>
         </profile>
       </profiles>
@@ -31218,6 +31778,32 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="a423-93ff-5a03-b2be" name="Warlord Traits (BRB)" hidden="false" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="d7d0-437e-937f-738b" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9644-a419-121c-91ee" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -31521,6 +32107,41 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5ae7-6d2d-8543-5245" name="Warlord" hidden="false" targetId="33f6-60da-7b70-5fee" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="29ca-3e22-e082-e5b7" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="a022-066a-c6bf-89b6" name="Warlord Traits (BRB)" hidden="false" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="585d-ed1b-2aa1-9829" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="585d-ed1b-2aa1-9829" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -32074,7 +32695,7 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="8391-8d92-bbfc-f7d6" name="HEIRLOOMS OF CONQUEST" hidden="false" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup">
+        <entryLink id="8391-8d92-bbfc-f7d6" name="Heirlooms of Conquest" hidden="false" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -34210,7 +34831,7 @@
       <selectionEntries>
         <selectionEntry id="aaa4-a667-76d0-c779" name="Cadian" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="4f42-f2a9-2c03-7794" name="BORN SOLDIERS" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="4f42-f2a9-2c03-7794" name="Born Soldiers" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34237,7 +34858,7 @@
         </selectionEntry>
         <selectionEntry id="e728-c8e8-d03b-13b0" name="Catachan" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="92dd-76ca-3c4c-bda6" name="BRUTAL STRENGTH" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="92dd-76ca-3c4c-bda6" name="Brutal Strength" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34264,7 +34885,7 @@
         </selectionEntry>
         <selectionEntry id="8b7d-1aa4-6a84-934e" name="Mordian" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="ea4b-49ac-480c-a544" name="PARADE DRILL" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="ea4b-49ac-480c-a544" name="Parade Drill" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34291,7 +34912,7 @@
         </selectionEntry>
         <selectionEntry id="8efe-03b2-98ce-04a7" name="Valhallan" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="b45c-df51-4f25-c75f" name="GRIM DEMEANOUR" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="b45c-df51-4f25-c75f" name="Grim Demeanour" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34318,7 +34939,7 @@
         </selectionEntry>
         <selectionEntry id="ebf3-00d7-204b-30d8" name="Vostroyan" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="9b32-9ca0-b8c6-9812" name="HEIRLOOM WEAPONS" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="9b32-9ca0-b8c6-9812" name="Heirloom Weapons" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34345,7 +34966,7 @@
         </selectionEntry>
         <selectionEntry id="3fb5-c3b8-4653-f6ff" name="Armageddon" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="ff55-5350-d595-4d82" name="INDUSTRIAL EFFICIENCY" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="ff55-5350-d595-4d82" name="Industrial Efficiency" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34372,7 +34993,7 @@
         </selectionEntry>
         <selectionEntry id="c945-509c-a11e-1260" name="Millitarum Tempestus" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="9788-da4d-1456-bccc" name="STORM TROOPERS" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="9788-da4d-1456-bccc" name="Storm Troopers" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34399,7 +35020,7 @@
         </selectionEntry>
         <selectionEntry id="f438-7180-aba6-e906" name="Tallarn" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="75f5-1107-4279-f3ba" name="SWIFT AS THE WIND" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="75f5-1107-4279-f3ba" name="Swift as the Wind" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34445,7 +35066,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="8ed7-7588-0f06-9b0d" name="HEIRLOOMS OF CONQUEST" hidden="false" collective="false">
+    <selectionEntryGroup id="8ed7-7588-0f06-9b0d" name="Heirlooms of Conquest" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -34455,9 +35076,9 @@
       </constraints>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="e85d-9a2a-eb42-47cb" name="THE EMPEROR’S BENEDICTION" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e85d-9a2a-eb42-47cb" name="The Emperor&apos;s Benediction" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="22d1-4a5a-c195-b32e" name="THE EMPEROR’S BENEDICTION" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="22d1-4a5a-c195-b32e" name="The Emperor&apos;s Benediction" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34466,7 +35087,7 @@
                 <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="COMMISSAR or LORD COMMISSAR with a bolt pistol only. The Emperor’s Benediction replaces the model’s bolt pistol and has the following profile:"/>
               </characteristics>
             </profile>
-            <profile id="b5e9-491e-7ecc-923b" name="THE EMPEROR’S BENEDICTION" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+            <profile id="b5e9-491e-7ecc-923b" name="The Emperor&apos;s Benediction" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34504,9 +35125,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2baf-f78a-e1ee-eb3f" name="THE LAURELS OF COMMAND" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2baf-f78a-e1ee-eb3f" name="The Laurels of Command" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="ad46-57d6-3f00-2b90" name="THE LAURELS OF COMMAND" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="ad46-57d6-3f00-2b90" name="The Laurels of Command" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34539,9 +35160,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c335-beb3-a6b5-43f3" name="THE BLADE OF CONQUEST" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c335-beb3-a6b5-43f3" name="The Blade of Conquest" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="9921-7de6-1fbb-9818" name="THE BLADE OF CONQUEST" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="9921-7de6-1fbb-9818" name="The Blade of Conquest" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34550,7 +35171,7 @@
                 <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Model with power sword only. The Blade of Conquest replaces the model’s power sword and has the following profile:"/>
               </characteristics>
             </profile>
-            <profile id="ebfe-4c5f-757c-696d" name="THE BLADE OF CONQUEST" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+            <profile id="ebfe-4c5f-757c-696d" name="The Blade of Conquest" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34588,9 +35209,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="91ff-e116-e0a5-e883" name="KUROV’S AQUILA" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="91ff-e116-e0a5-e883" name="Kurov&apos;s Aquila" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="8ce3-9182-ae0f-ebbc" name="KUROV’S AQUILA" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="8ce3-9182-ae0f-ebbc" name="Kurov&apos;s Aquila" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34623,9 +35244,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6e03-1571-d20f-9edd" name="THE DAGGER OF TU’SAKH" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6e03-1571-d20f-9edd" name="The Dagger of Tu&apos;Sakh" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="4bf7-e9ab-e669-33db" name="THE DAGGER OF TU’SAKH" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="4bf7-e9ab-e669-33db" name="The Dagger of Tu&apos;Sakh" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34658,9 +35279,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b3c8-2191-196a-850b" name="THE DEATHMASK OF OLLANIUS" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="b3c8-2191-196a-850b" name="The Deathmask of Ollanius" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="ae01-d204-3064-4d4b" name="THE DEATHMASK OF OLLANIUS" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="ae01-d204-3064-4d4b" name="The Deathmask of Ollanius" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34693,15 +35314,15 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6f22-5f4e-8af7-f9c6" name="RELIC OF LOST CADIA" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6f22-5f4e-8af7-f9c6" name="Relic of Lost Cadia" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="7bf3-1954-237b-0bdf" name="RELIC OF LOST CADIA" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="7bf3-1954-237b-0bdf" name="Relic of Lost Cadia" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="“CADIAN model only. The bearer can unveil this relic at the start of any turn. Until the end of that turn, you can re-roll hit and wound rolls of 1 for all CADIAN units within 12&quot; of the bearer. You can instead re-roll all failed hit and wound rolls for these units until the end of the turn if they are targeting a CHAOS unit."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="CADIAN model only. The bearer can unveil this relic at the start of any turn. Until the end of that turn, you can re-roll hit and wound rolls of 1 for all CADIAN units within 12&quot; of the bearer. You can instead re-roll all failed hit and wound rolls for these units until the end of the turn if they are targeting a CHAOS unit."/>
               </characteristics>
             </profile>
           </profiles>
@@ -34720,9 +35341,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="328b-264c-46a2-bfd9" name="MAMORPH TUSKBLADE" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="328b-264c-46a2-bfd9" name="Mamorth Tuskblade" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="f5a3-68f7-2cab-1034" name="MAMORPH TUSKBLADE" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+            <profile id="f5a3-68f7-2cab-1034" name="Mamorth Tuskblade" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34736,7 +35357,7 @@
                 <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
               </characteristics>
             </profile>
-            <profile id="7f58-730b-e615-e5e3" name="MAMORPH TUSKBLADE" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="7f58-730b-e615-e5e3" name="Mamorth Tuskblade" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34769,9 +35390,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4514-dbd8-858d-546d" name="PIETROV’S MK 45" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4514-dbd8-858d-546d" name="Pietrov&apos;s Mk 45 " hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="4e02-f3bd-a986-554a" name="PIETROV’S MK 45" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+            <profile id="4e02-f3bd-a986-554a" name="Pietrov&apos;s Mk 45 " hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34785,7 +35406,7 @@
                 <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Friendly VALHALLAN units within 6&quot; of the bearer can never lose more than one model as the result of any single failed Morale test."/>
               </characteristics>
             </profile>
-            <profile id="24c5-6dec-1b3a-888e" name="PIETROV’S MK 45" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="24c5-6dec-1b3a-888e" name="Pietrov&apos;s Mk 45 " hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34818,9 +35439,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8d9c-c27a-0066-4a54" name="ORDER OF THE IRON STAR OF MORDIAN" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8d9c-c27a-0066-4a54" name="Order of the Iron Star of Mordian" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="6ce7-8e21-6dc7-d0d6" name="ORDER OF THE IRON STAR OF MORDIAN" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="6ce7-8e21-6dc7-d0d6" name="Order of the Iron Star of Mordian" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34853,9 +35474,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="95a1-8a79-8233-b584" name="THE TACTICAL AUTO-RELIQUARY OF TYBERIUS" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="95a1-8a79-8233-b584" name="The Tactical Auto-Reliquary of Tyberius" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="6c9b-1abf-2b3e-3952" name="THE TACTICAL AUTO-RELIQUARY OF TYBERIUS" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="6c9b-1abf-2b3e-3952" name="The Tactical Auto-Reliquary of Tyberius" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34888,9 +35509,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2e85-1ece-1bfa-1e4d" name="CLAW OF THE DESERT TIGERS" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2e85-1ece-1bfa-1e4d" name="Claw of the Desert Tigers" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="e62f-032c-9bd2-cbf0" name="CLAW OF THE DESERT TIGERS" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+            <profile id="e62f-032c-9bd2-cbf0" name="Claw of the Desert Tigers" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34904,7 +35525,7 @@
                 <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the bearer fights, it can make 2 additional attacks with this weapon."/>
               </characteristics>
             </profile>
-            <profile id="a7a1-2345-46ef-96b3" name="CLAW OF THE DESERT TIGERS" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="a7a1-2345-46ef-96b3" name="Claw of the Desert Tigers" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34937,9 +35558,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fe23-2e5f-43b4-fdde" name="SKULL MASK OF ACHERON" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fe23-2e5f-43b4-fdde" name="Skull Mask of Acheron" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="3d56-239b-73c6-f4f1" name="SKULL MASK OF ACHERON" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="3d56-239b-73c6-f4f1" name="Skull Mask of Acheron" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -34964,9 +35585,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4ab3-aabe-ddbf-a962" name="THE ARMOUR OF GRAF TOSCHENKO" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4ab3-aabe-ddbf-a962" name="The Armour of Graf Toschenko" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="2d48-d00b-7f81-ecbd" name="THE ARMOUR OF GRAF TOSCHENKO" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+            <profile id="2d48-d00b-7f81-ecbd" name="The Armour of Graf Toschenko" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -35164,6 +35785,509 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e07c-3052-d93c-d0b8" type="max"/>
           </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d6e2-a400-a8db-d4f2" name="Warlord Traits" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bed7-65c6-5ef5-566f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="07ff-e2fe-f48b-4320" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c22c-df46-53a4-6177" name="Warlord Traits" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="623e-b291-f601-c25d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27cc-1afc-b3b6-8509" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="7d8b-783d-52ab-0059" name="Grand Strategist" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="262e-8696-d9c0-2fe3" name="Grand Strategist" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Whilst your Warlord is alive, you can re-roll a single hit roll, wound roll or saving throw per battle. In addition, if your army is Battle-forged and this Warlord is on the battlefield, roll a dice for each Command Point spent when using Stratagems. On a 5+ that Command Point is immediately refunded"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e275-61b4-934a-10e6" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f89-2f95-7856-00df" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="89a7-4e64-104d-964e" name="Old Grudges" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="c254-756d-1606-55e6" name="Old Grudges" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="After deployment, but before the first battle round begins, choose a unit in your opponent’s army. You can re-roll failed wound rolls for ASTRA MILITARUM units from your army that target the unit you chose whilst they are within 6&quot; of your Warlord."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a2-8cdc-2ec4-dc1b" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce94-f693-60b8-b33f" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e010-83cc-2039-db30" name="Implacable Determination" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8a9c-8be2-14a0-a73f" name="Implacable Determination" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When your Warlord and a single friendly unit within 3&quot; of them Advances, they may both add 6&quot; to their Move characteristic for that Movement phase instead of rolling a dice"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b763-3914-aa7f-d3e7" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f75a-9bd4-284e-be22" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d96b-e573-f794-4c00" name="Draconian Disiplinarian" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="194c-0b36-d6a2-1005" name="Draconian Disiplinarian" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll failed Morale tests for friendly ASTRA MILITARUM INFANTRY units within 6&quot; of your Warlord in the Morale phase."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62b2-439c-890a-589a" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8aa-5555-aeb4-7150" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="03c8-91e1-ada3-3e88" name="Bellowing Voice" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="1082-e1c9-08f6-5401" name="Bellowing Voice" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Add 3&quot; to the range of any abilities on your Warlord’s datasheet (such as Aura of Discipline or Voice of Command)."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4abf-4da1-42f7-9dad" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1aa-8254-201a-f6ad" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c88e-8828-206c-8e39" name="Master of Command" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="43dc-1f95-9385-942a" name="Master of Command" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your Warlord gains the Voice of Command ability. If your Warlord already has the Voice of Command or Tank Orders ability, they may instead issue one additional order per turn."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1620-54c4-43cf-50f3" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c68-ff64-485e-e529" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9e35-3825-bb46-75e9" name="Honoured Duellist" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="d732-bc2b-7583-6b47" name="Honoured Duellist" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Re-roll failed hit and wound rolls in the Fight phase for attacks made by your Warlord."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ebf3-00d7-204b-30d8" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da61-b15c-5381-a729" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c03-f890-25df-ab4d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="62da-ed0a-445a-9773" name="Superior Tactical Training" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="bf60-1735-a404-b2ae" name="Superior Tactical Training" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a dice each time your Warlord issues an order or tank order. On a 4+ that order can affect an additional CADIAN unit of the same type as the original target (INFANTRY or LEMAN RUSS) within 6&quot; of the Warlord."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aaa4-a667-76d0-c779" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d5-7388-713f-eeeb" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b5d-c27c-10fd-0274" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bca1-2b2e-5623-7246" name="Ex-gang Leader" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="522d-dc79-dfb1-4032" name="Ex-gang Leader" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Add 1 to this Warlord’s Attacks characteristic. In addition, add 1 to any wound rolls made for your Warlord in the Fight phase."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fb5-c3b8-4653-f6ff" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dcb-57f5-64d2-0b0b" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d968-8391-0d56-dba7" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9cef-5a18-69d8-c9c6" name="Tenacious" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="d23c-3468-b6c3-2e2a" name="Tenacious" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a dice each time your Warlord suffers a wound or mortal wound. On a 5+, the wound is ignored. If your Warlord has the VEHICLE keyword, the wound is ignored on a roll of a 6+ instead."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8efe-03b2-98ce-04a7" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a0e-cd77-8b62-7552" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8008-b624-19af-7715" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4378-53d8-97cb-bca2" name="Swift Attacker" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="2419-6a24-2821-7ea6" name="Swift Attacker" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your Warlord and all friendly TALLARN units within 6&quot; of them can charge even if they Fell Back that turn."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f438-7180-aba6-e906" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86bc-c45b-a4b0-aa9f" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2285-cca8-9398-973c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5e1c-b29f-72c3-8e06" name="Faithful Servant of the Throne" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="1957-7019-9cc1-2abf" name="Faithful Servant of the Throne" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your Warlord can attempt to deny one psychic power in each enemy Psychic phase in the same manner as a Psyker."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c945-509c-a11e-1260" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d73-4087-a5c5-216a" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6093-80e2-03ba-00ab" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="22a0-f598-a343-61af" name="Lead From the Front" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="febf-ec0e-2c32-ef10" name="Lead From the Front" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This Warlord can perform a Heroic Intervention if, after the enemy has completed all their charge moves, they are within 6&quot; of any enemy units. This Warlord can move up to 6&quot; when performing a Heroic Intervention, so long as they end the move closer to the nearest enemy model. In addition, if your Warlord charged, was charged or performed a Heroic Intervention, then until the end of the turn you can re-roll failed hit rolls made for them."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e728-c8e8-d03b-13b0" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ce-e752-d618-2bb1" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aef-971d-e7e7-b76d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f36-d60c-27c7-6be9" name="Iron Discipline" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="5a97-b3c0-6160-6652" name="Iron Discipline" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a dice for each model that flees from any friendly MORDIAN units within 6&quot; of your Warlord in the Morale phase. On a 4+, that model does not flee."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b7d-1aa4-6a84-934e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a537-022b-bc24-6543" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="668d-1e6b-4fd1-ab17" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2171-5f21-6ca6-3424" name="Warlord Traits (BRB)" hidden="false" targetId="d442-1f03-d9da-e77f" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
           <categoryLinks/>
         </entryLink>
       </entryLinks>

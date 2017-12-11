@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 8th Edition" revision="28" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 8th Edition" revision="32" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1763,6 +1763,674 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="8cae-c44c-ef1f-8f43" name="Planetstrike Attacker +5 CP" book="Chapter Approved 2017" page="34" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <forceEntries>
+        <forceEntry id="19c2-d22a-7ab4-53f1" name="Planetstrike Attacker" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <forceEntries/>
+          <categoryLinks>
+            <categoryLink id="b9de-d698-5dba-a52d" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="9c52-f689-6c7d-c819" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="5b41-41c5-eb22-bb56" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="4d08-f2b8-c821-2d6b" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="7597-dd7f-9622-4751" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="b2b9-dc58-ec81-65a1" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="f9f2-5dcb-2b12-ae84" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="9b4c-7cd9-cbbb-292a" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="958b-ff62-a5a2-f12c" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4b40-d755-270f-aa80" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f239-065f-a65a-84f1" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ac19-fec5-e58d-8e45" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5ce4-5803-13a7-ab08" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf98-c5be-6bc1-0297" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="605c-44ed-3cbd-5a3a" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c55b-b52b-fd75-635f" type="max"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="89f8-3871-6593-6b74" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="79b3-c8c5-cc7a-6371" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="79c8-04a6-15e1-a20c" type="max"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="596f-0d22-ad3d-8f03" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d1e3-0590-f89f-1506" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4976-b422-3e65-af73" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a19b-ee60-a490-c369" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="80f9-8b10-2178-7419" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="bbf5-21d7-a5cc-0e11" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="4240-b0fc-8a69-2871" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c274d0b0-5866-44bc-9810-91c136ae7438" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e888-1504-aa61-95ff" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4240-b0fc-8a69-2871" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="810f-6b53-1e3b-fe9d" name="Planetstrike Defender +5 CP" book="Chapter Approved 2017" page="34" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <forceEntries>
+        <forceEntry id="9fd1-149e-1542-a91c" name="Planetstrike Defender" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <forceEntries/>
+          <categoryLinks>
+            <categoryLink id="d981-db39-9da3-c9f8" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="7edd-0b96-420a-c9bd" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="f2aa-977c-2f18-1698" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="f29c-5abe-183f-53a9" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="fab4-b28d-9808-c49f" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="6ffe-1026-e06c-f498" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="a9dc-4176-d12f-e79c" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="55d6-e46b-5d87-b994" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="0b64-fa2c-fe0a-f9de" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7d81-8310-6094-cf8d" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7881-e2a1-efe3-ec8f" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa5c-ef89-d9dc-c8ef" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="38fb-adc3-e7fd-8c60" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="79c3-96c1-d10f-343d" type="max"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a53f-10de-0d0b-210a" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="014c-9365-320c-f41e" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="feab-fb5a-e238-40c9" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3a52-1f6c-9ff8-c340" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4644-c976-dedb-dfc0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8590-a401-cb74-b5b3" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf16-4bce-3c83-2736" type="max"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4cf4-226b-660e-a0aa" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="dee8-6d46-4f0e-52ad" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7199-bb08-0039-d29b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e868-759d-d0b4-de3e" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="ee38-3431-abb2-9e62" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c274d0b0-5866-44bc-9810-91c136ae7438" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e888-1504-aa61-95ff" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ee38-3431-abb2-9e62" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="c048-e584-e628-474e" name="Stronghold Assault Attacker +5 CP" book="Chapter Approved 2017" page="46" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <forceEntries>
+        <forceEntry id="ecdd-b72a-f9dd-a02a" name="Stronghold Assault Attacker" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <forceEntries/>
+          <categoryLinks>
+            <categoryLink id="0b8a-c61e-2476-113b" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="e2ec-1211-c558-8e0d" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="939c-bed4-8b91-1dce" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="673d-3c4a-9004-3b11" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="7e1f-2e3e-7b33-4f37" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="98e3-b638-93a6-716a" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="226d-278e-f933-0315" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="01fa-07f7-0209-abdc" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="0a94-a878-e103-6083" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="cd87-e443-1d40-5ccc" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="143a-8ba5-d44b-3108" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1415-6d30-9f9d-407b" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="eae6-d11b-d86e-fa3c" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f4a7-77ee-74dd-1da4" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b81-f009-e9f6-8219" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="96f9-887c-ee0a-bca2" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ee8e-ccd1-787c-e23d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a617-c535-ae01-ab51" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d37c-cc18-9ae0-f90d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8609-55c5-3e7a-623f" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d7a-4989-74e8-2a0c" type="min"/>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="85c7-f616-15be-2e7a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a639-9ba1-d8ce-3be6" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9392-4b4a-644e-b274" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2b73-912c-f20b-cb0a" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="9a18-2f70-70ee-6230" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c274d0b0-5866-44bc-9810-91c136ae7438" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e888-1504-aa61-95ff" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9a18-2f70-70ee-6230" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="e6cd-ac5b-db70-84ff" name="Stronghold Assault Defender +5 CP" book="Chapter Approved 2017" page="46" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <forceEntries>
+        <forceEntry id="bfc9-d668-8dec-a0ee" name="Stronghold Assault Defender" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <forceEntries/>
+          <categoryLinks>
+            <categoryLink id="3547-81af-f102-632e" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="0e3c-008f-7e8a-3f6d" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="aaf4-ea80-63a1-328b" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="1e95-c712-47b6-ebbd" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="0f0d-d815-436c-8775" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="bd09-2ffc-fe1a-508c" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="311d-4ffb-0807-9e37" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="3fcb-1ea2-66d6-c8bb" name="Fortification" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="607f-451f-4b13-2410" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink id="722b-09e4-f228-16be" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7f5c-0518-2449-ad67" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c371-f9a7-5f77-851c" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8a7c-e440-38be-c05c" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1698-4cdd-e737-378e" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7957-3942-3a51-bf32" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ed80-2bef-b904-524f" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="bc3c-de9d-7396-70fe" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6610-dd45-6d5e-741a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2f71-ff59-4f31-33ec" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="75a7-ed04-b0b8-2059" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="daad-ff2c-83ab-fc5d" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f2c3-3aa4-a133-3f5c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fb6c-0781-4191-2f7d" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9de2-55d2-ac58-82c0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b8d5-5f9d-d63d-7c91" name="Fortification" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="253c-09cc-11d9-403d" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="191b-0f65-3883-b447" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="dbc3-4362-6d5d-c70e" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="6ce3-81ab-8b21-3ef4" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c274d0b0-5866-44bc-9810-91c136ae7438" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e888-1504-aa61-95ff" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6ce3-81ab-8b21-3ef4" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries/>
   <entryLinks>
@@ -1994,6 +2662,22 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="c2cd-8939-c65f-49b4" name="New CategoryLink" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4bcc-b0f4-b425-f38e" name="Gametype" hidden="false" targetId="bf09-85b2-c097-1071" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="ab48-6dc1-4800-80b6" name="New CategoryLink" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5280,7 +5964,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="18.0"/>
+        <cost name="pts" costTypeId="points" value="15.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -8667,6 +9351,215 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="33f6-60da-7b70-5fee" name="Warlord" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3d2b-09cf-4f18-7e67" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1bad-1970-8d5d-733f" name="1. Legendary Fighter" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="8501-bf9c-e77c-da0e" name="1. Legendary Fighter" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this warlord charges in the charge phase, add 1 to their attacks characteristic until the end of the ensuing fight phase.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dc7-9f41-8321-c977" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bad4-7cc1-6b79-0e18" name="2. Inspiring Leader" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="d2b3-725c-193e-f2f3" name="2. Inspiring Leader" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Friendly units within 6&quot; of this warlord can add 1 to their leadership characteristic.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6e7-fab4-36c3-d957" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a24-3ad2-9f48-7049" name="3. Tenacious Survivor" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="2f4d-998d-c4ca-8167" name="3. Tenacious Survivor" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Roll a dice each time this warlord loses a wound. On a 6, the warlord shrugs off the damage and does not lose the wound.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed87-7068-1387-1a8c" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf09-85b2-c097-1071" name="Gametype" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1cf3-6923-9f59-8fbf" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f625-0e92-d7c2-ba05" name="New CategoryLink" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c30c-e1e6-e679-c42c" name="GameType" hidden="false" collective="false" defaultSelectionEntryId="58c5-1d35-3869-613f">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bab-dec0-5aa5-8277" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="58c5-1d35-3869-613f" name="Matched" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6e-7539-e300-b817" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c702-d73b-dccf-5617" name="Narrative" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3500-057d-b88a-bdd9" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries>
+                <selectionEntry id="f361-b6f6-93fd-2250" name="Planetstrike" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="76d3-0012-c152-b50d" name="Stronghold Assault" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3ab4-97da-1f47-b1ff" name="Narrative" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="891c-fbf0-e426-2c15" name="Fallen Champion Equipment" hidden="false" collective="false">
@@ -8856,6 +9749,444 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d442-1f03-d9da-e77f" name="Warlord Traits (BRB)" hidden="true" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33f6-60da-7b70-5fee" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddaf-3652-257e-33de" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="bef9-3a50-5ff4-1ba0" name="BRB 1: Legendary Fighter" hidden="false" targetId="1bad-1970-8d5d-733f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="034f-ad37-f67b-95fe" name="BRB 2: Inspiring Leader" hidden="false" targetId="bad4-7cc1-6b79-0e18" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c3cf-4cf7-145c-e210" name="BRB 3: Tenacious Survivor" hidden="false" targetId="9a24-3ad2-9f48-7049" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f673-3d9b-bb1b-377f" name="Warlord Traits (CA)" hidden="true" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f361-b6f6-93fd-2250" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="76d3-0012-c152-b50d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0260-30d2-6345-8535" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e219-8f88-be6f-c37a" name="Planetstrike Attacker" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f361-b6f6-93fd-2250" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd4e-9a40-4326-dd5b" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="ff3c-3922-d0a7-b62f" name="1. Master of Timing" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="5fbe-1d7c-7517-cf6e" name="1. Master of Timing" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You can re-roll one failed Reserve roll each turn.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0e3f-2b7b-06e3-a454" name="2. Burner of Worlds" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="90e3-3b12-211c-81e1" name="2. Burner of Worlds" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>When you make Firestorm attacks, add 1 to the total number you can make.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9905-0a35-c18f-50ea" name="3. Planetary Attacker" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="2122-2953-bddd-8286" name="3. Planetary Attacker" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You have one bonus Command Point – this can only be spent on a Planetstrike Stratagem.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="89d9-81aa-53be-4170" name="Planetstrike Defender" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f361-b6f6-93fd-2250" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa63-efaa-e85d-cff3" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="bc9d-ccff-4d20-771c" name="1. Lord of Ambush" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="c84c-d93d-5431-65b6" name="1. Lord of Ambush" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You can re-roll hit rolls of 1 for friendly units within 6&quot; of your Warlord if targeting an Attacking unit that arrived as reinforcements this turn.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a33c-1bef-a01a-e980" name="2. Protector of Worlds" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="c05d-2df2-be3b-85e3" name="2. Protector of Worlds" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You can re-roll failed Morale tests for friendly units whilst they are within 6&quot; of your Warlord.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1dec-4c83-2adc-50bc" name="3. Planetary Defender" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="1d3f-d7e0-bf97-19bb" name="3. Planetary Defender" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You have one bonus Command Point – this can only be spent on a Planetstrike Stratagem.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6d80-f955-1f1c-459e" name="Stronghold Assault Attacker" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="76d3-0012-c152-b50d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb43-d058-689b-4008" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="3c3c-7e55-ffac-e301" name="1. Counterfire Master" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="13a9-f859-ac4f-9f10" name="1. Counterfire Master" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You can re-roll failed hit rolls for friendly units within 6&quot; of your Warlord (this includes any BUILDINGthey are embarked within, and any other units embarked within the same building).</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6310-0441-8085-fdcb" name="2. Fortress Commander" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="11c3-e035-b58e-e243" name="2. Fortress Commander" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>If your Warlord is embarked within a BUILDING, roll a dice each time that building loses a wound; on a 6+, the building does not lose a wound.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8bc6-4856-60a1-56b4" name="3. Stronghold Assault Defender" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="b02d-f900-4ff8-e349" name="3. Stronghold Assault Defender" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You have one bonus Command Point – this can only be spent ona Stronghold Assault Stratagem.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4857-0c03-64df-6378" name="Stonghold Assault Defender" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="76d3-0012-c152-b50d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7da-09d8-5ddc-637d" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="0222-b234-6991-696a" name="1. Siege Breaker" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="1693-b1c3-ff08-a17b" name="1. Siege Breaker" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You can re-roll failed charge rolls for friendly units that are within 6&quot; of your Warlord when they declare a charge against a BUILDING.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4680-d58f-ddf8-3382" name="2. Fortress Destroyer" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="3c7c-2581-a48f-f85b" name="2. Fortress Destroyer" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You can re-roll wound rolls of 1 for friendly units that are within 6&quot; of your Warlord when they target a BUILDING.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d4be-616e-a6d7-9c22" name="3. Stronghold Assault Attacker" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="6bf3-c42e-2c4f-1968" name="3. Stronghold Assault Attacker" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>You have one bonus Command Point – this can only be spent on aStronghold Assault Stratagem.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
